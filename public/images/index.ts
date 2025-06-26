@@ -1,0 +1,11 @@
+export { default as ApplePayImage } from "@/public/images/apple.png";
+export { default as GpayImage } from "@/public/images/gpay.png";
+export { default as MasterCardImage } from "@/public/images/master.png";
+export { default as SkrillImage } from "@/public/images/skrill.png";
+export { default as NetellerImage } from "@/public/images/neteller.png";
+export { default as VisaImage } from "@/public/images/visa.png";
+export { default as RevolutImage } from "@/public/images/revolut.png";
+export { default as EighteenImage } from "@/public/images/18.png";
+export { default as GAImage } from "@/public/images/ga.png";
+export { default as GAMImage } from "@/public/images/gamcare.png";
+export { default as CImage } from "@/public/images/c.png";

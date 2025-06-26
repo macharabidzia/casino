@@ -1,0 +1,43 @@
+import {
+  AVAILABLE_CATEGORIES,
+  AVAILABLE_PROVIDERS,
+} from "@/api/constants/gameFilters";
+import { HomeFiltersClient } from "./Filters.client";
+import { parseSearchParamToArray } from "@/lib/searchParams";
+
+interface HomeFiltersProps {
+  searchParams: {
+    search?: string;
+    category?: string | string[];
+    provider?: string | string[];
+  };
+}
+
+export default async function HomeFilters({ searchParams }: HomeFiltersProps) {
+  const resolvedSearchParams = await searchParams; // Still important to await
+
+  const categories = parseSearchParamToArray(resolvedSearchParams.category);
+  const providers = parseSearchParamToArray(resolvedSearchParams.provider);
+
+  const categoryOptions: { value: string; label: string }[] =
+    AVAILABLE_CATEGORIES.map((c: string) => ({
+      value: c,
+      label: c.replace(/-/g, " "),
+    }));
+
+  const providerOptions: { value: string; label: string }[] =
+    AVAILABLE_PROVIDERS.map((p: string) => ({
+      value: p,
+      label: p.replace(/-/g, " "),
+    }));
+
+  return (
+    <HomeFiltersClient
+      initialSearch={resolvedSearchParams.search}
+      initialCategories={categories}
+      initialProviders={providers}
+      categoryOptions={categoryOptions}
+      providerOptions={providerOptions}
+    />
+  );
+}
