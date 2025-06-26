@@ -32,8 +32,7 @@ const svgImages = [
 const ProvidersSection = () => {
   return (
     <section className="space-y-2">
-      <h2 className="my-4 text-lg font-semibold capitalize">Home</h2>
-
+      <h2 className="my-4 text-lg font-semibold capitalize">Providers</h2>
       <Carousel
         opts={{
           align: "start",

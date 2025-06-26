@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import {
   AVAILABLE_CATEGORIES,
   DEFAULT_PAGE_LIMIT,
-} from "@/api/constants/gameFilters";
+} from "@/constants/gameFilters";
 import { HomeCarousel } from "@/components/features/home/Carousel";
 import HomePromotions from "@/components/features/home/Promotions";
 import HomeFilters from "@/components/features/home/Filters/Filters";

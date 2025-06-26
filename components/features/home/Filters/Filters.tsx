@@ -1,7 +1,7 @@
 import {
   AVAILABLE_CATEGORIES,
   AVAILABLE_PROVIDERS,
-} from "@/api/constants/gameFilters";
+} from "@/constants/gameFilters";
 import { HomeFiltersClient } from "./Filters.client";
 import { parseSearchParamToArray } from "@/lib/searchParams";
 

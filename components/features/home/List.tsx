@@ -27,7 +27,6 @@ const List = async ({
   });
 
   console.log(games);
-  // Skip empty sections to avoid blank headings
   if (!games?.length) return null;
 
   return (
