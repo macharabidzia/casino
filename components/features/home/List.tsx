@@ -1,8 +1,6 @@
-// components/List.tsx ← Server Component
 import { fetchGames } from "@/api/games";
 
 export type ListProps = {
-  /** Section heading */
   title: string;
   category?: string;
   limit?: number;
