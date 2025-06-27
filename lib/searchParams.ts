@@ -1,5 +1,3 @@
-// lib/utils/searchParams.ts
-
 type SearchParamValue = string | string[] | undefined;
 
 /**
@@ -14,8 +12,7 @@ export function parseSearchParamToArray(param: SearchParamValue): string[] {
     return param;
   }
   if (typeof param === "string") {
-    // Split by comma for cases where multiple values are joined (e.g., from server actions)
-    return param.split(",").filter(Boolean); // .filter(Boolean) removes empty strings
+    return param.split(",").filter(Boolean); 
   }
   return [];
 }

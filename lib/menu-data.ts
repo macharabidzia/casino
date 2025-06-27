@@ -1,4 +1,4 @@
-// @/menu-data.ts
+
 import {
   BlackJackSvg,
   CrashSvg,
@@ -17,7 +17,7 @@ import {
   VipClubSvg,
 } from "@/public/icons";
 
-import { Home, Settings, Inbox, Calendar, Search } from "lucide-react";
+import { Home } from "lucide-react";
 
 export interface MenuItem {
   title?: string;
@@ -106,5 +106,4 @@ export const items: MenuItem[] = [
     url: "video-poker",
     icon: VideoPokerSvg,
   },
- 
 ];
