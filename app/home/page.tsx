@@ -5,10 +5,10 @@ import {
   AVAILABLE_CATEGORIES,
   DEFAULT_PAGE_LIMIT,
 } from "@/constants/gameFilters";
-import { HomeCarousel } from "@/components/features/home/Carousel";
+import { Heading } from "@/components/features/home/Heading";
 import HomePromotions from "@/components/features/home/Promotions";
 import HomeFilters from "@/components/features/home/Filters/Filters";
-import List from "@/components/features/home/List";
+import List from "@/components/features/home/List/List";
 import ProvidersSection from "@/components/features/home/ProvidersSection";
 import { parseSearchParamToArray } from "@/lib/searchParams";
 import PaymentsSection from "@/components/features/home/PaymentsSection";
@@ -25,17 +25,24 @@ type PageProps = {
     search?: string;
     category?: string | string[];
     provider?: string | string[];
+    page: any;
+    limit: any;
   };
 };
 
 export default async function HomePage({ searchParams }: PageProps) {
   // Await searchParams before destructuring
-  const { search, category, provider } = await searchParams;
+  const {
+    search,
+    category,
+    provider,
+    page = 1,
+    limit = DEFAULT_PAGE_LIMIT,
+  } = await searchParams;
 
   // Now, category and provider will be resolved correctly
   const activeCategories: string[] = parseSearchParamToArray(category);
   const activeProviders: string[] = parseSearchParamToArray(provider);
-
   const categoriesToDisplay =
     activeCategories.length > 0
       ? AVAILABLE_CATEGORIES.filter((cat) => activeCategories.includes(cat))
@@ -43,7 +50,7 @@ export default async function HomePage({ searchParams }: PageProps) {
 
   return (
     <div className="container mx-auto my-4 space-y-8 text-white">
-      <HomeCarousel />
+      <Heading />
       <HomePromotions />
       <HomeFilters searchParams={searchParams} />
       {categoriesToDisplay.map((cat) => (
@@ -58,7 +65,8 @@ export default async function HomePage({ searchParams }: PageProps) {
             category={cat}
             search={search}
             provider={activeProviders.join(",")}
-            limit={DEFAULT_PAGE_LIMIT}
+            limit={limit}
+            page={page}
           />
         </Suspense>
       ))}

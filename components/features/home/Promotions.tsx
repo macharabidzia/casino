@@ -12,10 +12,10 @@ const HomePromotions = () => {
       <div className="flex-1">
         <Image
           src={Image1}
-          priority
           alt="Promotional Image 1"
           width={400}
           height={250}
+          priority
           className="w-full h-full rounded-lg object-cover shadow-md"
         />
       </div>
@@ -38,7 +38,7 @@ const HomePromotions = () => {
             alt="Promotional Image 3"
             width={200}
             priority
-            height={117} // Adjusted height to make rows fit the 250px parent height with gap-4
+            height={117}
             className="w-full h-full rounded-lg object-cover shadow-md"
           />
         </div>
@@ -48,7 +48,7 @@ const HomePromotions = () => {
             alt="Promotional Image 4"
             width={200}
             priority
-            height={117} // Adjusted height
+            height={117}
             className="w-full h-full rounded-lg object-cover shadow-md"
           />
         </div>
@@ -58,7 +58,7 @@ const HomePromotions = () => {
             alt="Promotional Image 5"
             width={200}
             priority
-            height={117} // Adjusted height
+            height={117}
             className="w-full h-full rounded-lg object-cover shadow-md"
           />
         </div>
@@ -68,7 +68,7 @@ const HomePromotions = () => {
             alt="Promotional Image 1 (reused)"
             width={200}
             priority
-            height={117} // Adjusted height
+            height={117}
             className="w-full h-full rounded-lg object-cover shadow-md"
           />
         </div>

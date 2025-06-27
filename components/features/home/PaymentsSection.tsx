@@ -34,12 +34,20 @@ const PaymentsSection = () => {
             key={i}
             className="relative h-10 w-16 sm:h-12 sm:w-20 lg:h-14 lg:w-24 shrink-0"
           >
-            <Image src={item} alt="payment" fill className="object-contain" />
+            <Image
+              src={item}
+              alt="payment"
+              width={80}
+              height={55}
+              className="object-contain"
+            />
           </div>
         ))}
       </div>
 
-      <Button className="bg-light-blue cursor-pointer shrink-0">Buy Now</Button>
+      <Button className="bg-light-blue cursor-pointer shrink-0 max-w-[145px] w-full h-full">
+        Buy Now
+      </Button>
     </div>
   );
 };

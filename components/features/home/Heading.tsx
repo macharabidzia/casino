@@ -26,7 +26,7 @@ const images = [
   { image: Carousel3 },
 ];
 
-export function HomeCarousel() {
+export const Heading = () => {
   const [api, setApi] = React.useState<any>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
@@ -75,6 +75,7 @@ export function HomeCarousel() {
                 width={595}
                 height={300}
                 className="w-full h-full rounded-md object-cover"
+                priority
               />
             </div>
           </CarouselItem>
@@ -103,4 +104,4 @@ export function HomeCarousel() {
       </div>
     </Carousel>
   );
-}
+};

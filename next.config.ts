@@ -3,7 +3,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "api.remailer.eu",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
   turbopack: {
     rules: {
       "*.svg": {
@@ -13,15 +22,21 @@ const nextConfig: NextConfig = {
             options: {
               icon: true,
               titleProp: true,
-              svgProps: {
-                height: "auto",
-              },
             },
           },
         ],
         as: "*.js",
       },
     },
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true,
+      },
+    ];
   },
 };
 

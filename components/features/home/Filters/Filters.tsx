@@ -14,7 +14,7 @@ interface HomeFiltersProps {
 }
 
 export default async function HomeFilters({ searchParams }: HomeFiltersProps) {
-  const resolvedSearchParams = await searchParams; // Still important to await
+  const resolvedSearchParams = await searchParams;
 
   const categories = parseSearchParamToArray(resolvedSearchParams.category);
   const providers = parseSearchParamToArray(resolvedSearchParams.provider);
