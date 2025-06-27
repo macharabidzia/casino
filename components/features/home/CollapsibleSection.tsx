@@ -5,7 +5,7 @@ import {
 } from "@/components/ui/collapsible";
 import { Button } from "@/components/ui/button";
 
-export function CollapsibleSection() {
+export default function CollapsibleSection() {
   return (
     <div className="space-y-4 bg-dark-blue p-4 rounded-md">
       <p>

@@ -7,7 +7,7 @@ export type ListProps = {
   limit?: number;
   search?: string;
   provider?: string;
-  page: any;
+  page: number;
 };
 
 const List = async ({

@@ -27,9 +27,9 @@ const images = [
 ];
 
 export const Heading = () => {
-  const [api, setApi] = React.useState<any>();
+  const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
+  const [, setCount] = React.useState(0);
 
   React.useEffect(() => {
     if (!api) {
@@ -84,7 +84,7 @@ export const Heading = () => {
       <div className="relative flex justify-center items-center mt-4 space-x-2">
         {api && (
           <div className="flex space-x-2">
-            {api.scrollSnapList().map((_: any, index: number) => (
+            {api.scrollSnapList().map((_: number, index: number) => (
               <button
                 key={index}
                 onClick={() => api.scrollTo(index)}

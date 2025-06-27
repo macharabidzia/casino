@@ -25,9 +25,8 @@ const PaymentsSection = () => {
   return (
     <div className="bg-dark-blue text-white flex flex-col md:flex-row w-full items-center justify-center md:justify-evenly gap-4 py-4 px-4 sm:px-6 md:px-8 rounded-md">
       <h1 className="text-center text-sm md:text-lg whitespace-nowrap">
-        You don't have Crypto? No problem.
+        You don&apos;t have Crypto? No problem.
       </h1>
-
       <div className="flex flex-wrap justify-center gap-4 flex-grow md:flex-grow-0">
         {payments.map((item, i) => (
           <div
@@ -44,7 +43,6 @@ const PaymentsSection = () => {
           </div>
         ))}
       </div>
-
       <Button className="bg-light-blue cursor-pointer shrink-0 max-w-[145px] w-full h-full">
         Buy Now
       </Button>

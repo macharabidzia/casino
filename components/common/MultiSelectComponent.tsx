@@ -33,7 +33,7 @@ interface MultiSelectFilterProps {
   onSelectionChange: (selected: string[]) => void;
 }
 
-export function MultiSelectFilter({
+export default function MultiSelectFilter({
   title,
   options,
   selectedValues,

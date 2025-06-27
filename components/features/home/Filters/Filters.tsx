@@ -2,15 +2,15 @@ import {
   AVAILABLE_CATEGORIES,
   AVAILABLE_PROVIDERS,
 } from "@/constants/gameFilters";
-import { HomeFiltersClient } from "./Filters.client";
 import { parseSearchParamToArray } from "@/lib/searchParams";
+import HomeFiltersClient from "./Filters.client";
 
 interface HomeFiltersProps {
-  searchParams: {
+  searchParams: Promise<{
     search?: string;
     category?: string | string[];
     provider?: string | string[];
-  };
+  }>;
 }
 
 export default async function HomeFilters({ searchParams }: HomeFiltersProps) {

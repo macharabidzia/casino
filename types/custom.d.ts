@@ -14,3 +14,14 @@ type Pagination = {
   next_page: number | null;
   prev_page: number | null;
 };
+type Option = {
+  label: string;
+  value: string;
+};
+interface CarouselApi {
+  scrollSnapList: () => number[];
+  selectedScrollSnap: () => number;
+  on: (eventName: "select" | "reInit", callback: () => void) => void;
+  off: (eventName: "select" | "reInit", callback: () => void) => void;
+  scrollTo: (index: number) => void;
+}

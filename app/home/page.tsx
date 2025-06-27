@@ -12,7 +12,7 @@ import List from "@/components/features/home/List/List";
 import ProvidersSection from "@/components/features/home/ProvidersSection";
 import { parseSearchParamToArray } from "@/lib/searchParams";
 import PaymentsSection from "@/components/features/home/PaymentsSection";
-import { CollapsibleSection } from "@/components/features/home/CollapsibleSection";
+import CollapsibleSection from "@/components/features/home/CollapsibleSection";
 
 export const metadata: Metadata = {
   title: "Play the Best Games Online",
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
 };
 
 type PageProps = {
-  searchParams: {
+  searchParams: Promise<{
     search?: string;
     category?: string | string[];
     provider?: string | string[];
     page: number;
     limit: number;
-  };
+  }>;
 };
 
-export default async function HomePage({ searchParams }: PageProps) {
+export default async function Home({ searchParams }: PageProps) {
   const {
     search,
     category,

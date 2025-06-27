@@ -36,7 +36,7 @@ const mobileNavItems: MobileMenuItem[] = [
   },
 ];
 
-export function AppMobileMenu() {
+export default function AppMobileMenu() {
   const { toggleSidebar } = useSidebar();
   return (
     <div

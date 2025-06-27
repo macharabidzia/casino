@@ -12,7 +12,7 @@ export function parseSearchParamToArray(param: SearchParamValue): string[] {
     return param;
   }
   if (typeof param === "string") {
-    return param.split(",").filter(Boolean); 
+    return param.split(",").filter(Boolean);
   }
   return [];
 }
@@ -25,7 +25,7 @@ export function parseSearchParamToArray(param: SearchParamValue): string[] {
  * @param name The name of the parameter (e.g., "category").
  * @param values An array of string values.
  */
-export function appendArrayToSearchParams(
+export default function appendArrayToSearchParams(
   params: URLSearchParams,
   name: string,
   values: string[]

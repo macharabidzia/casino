@@ -9,7 +9,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { items } from "@/lib/menu-data";
-export function AppSidebar() {
+export default function AppSidebar() {
   return (
     <Sidebar collapsible="icon" className="group">
       <SidebarContent>

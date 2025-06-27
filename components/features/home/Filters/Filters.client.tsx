@@ -11,11 +11,11 @@ import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { filterGamesAction } from "@/actions/home/actions";
-import { useDebounce } from "@/hooks/use-debounce";
-import { MultiSelectFilter } from "@/components/common/MultiSelectComponent";
 import { items } from "@/lib/menu-data";
+import useDebounce from "@/hooks/use-debounce";
+import MultiSelectFilter from "@/components/common/MultiSelectComponent";
 
-export function HomeFiltersClient({
+export default function HomeFiltersClient({
   initialSearch = "",
   initialCategories = [],
   initialProviders = [],
@@ -25,8 +25,8 @@ export function HomeFiltersClient({
   initialSearch?: string;
   initialCategories?: string[];
   initialProviders?: string[];
-  categoryOptions: any[];
-  providerOptions: any[];
+  categoryOptions: Option[];
+  providerOptions: Option[];
 }) {
   const formRef = useRef<HTMLFormElement>(null);
   const router = useRouter();

@@ -1,7 +1,7 @@
 // actions/home/actions.ts
 "use server";
 
-import { appendArrayToSearchParams } from "@/lib/searchParams";
+import appendArrayToSearchParams from "@/lib/searchParams";
 import { redirect } from "next/navigation";
 
 export async function filterGamesAction(
