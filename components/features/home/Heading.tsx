@@ -26,7 +26,7 @@ const images = [
   { image: Carousel3 },
 ];
 
-export const Heading = () => {
+export default function Heading() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [, setCount] = React.useState(0);
@@ -104,4 +104,4 @@ export const Heading = () => {
       </div>
     </Carousel>
   );
-};
+}

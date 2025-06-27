@@ -1,5 +1,5 @@
 import { fetchGames } from "@/api/games";
-import { ListCarousel } from "./ListCarousel";
+import ListCarousel from "./ListCarousel";
 
 export type ListProps = {
   title: string;

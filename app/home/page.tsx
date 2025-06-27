@@ -5,7 +5,6 @@ import {
   AVAILABLE_CATEGORIES,
   DEFAULT_PAGE_LIMIT,
 } from "@/constants/gameFilters";
-import { Heading } from "@/components/features/home/Heading";
 import HomePromotions from "@/components/features/home/Promotions";
 import HomeFilters from "@/components/features/home/Filters/Filters";
 import List from "@/components/features/home/List/List";
@@ -13,6 +12,7 @@ import ProvidersSection from "@/components/features/home/ProvidersSection";
 import { parseSearchParamToArray } from "@/lib/searchParams";
 import PaymentsSection from "@/components/features/home/PaymentsSection";
 import CollapsibleSection from "@/components/features/home/CollapsibleSection";
+import Heading from "@/components/features/home/Heading";
 
 export const metadata: Metadata = {
   title: "Play the Best Games Online",

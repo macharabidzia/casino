@@ -1,4 +1,3 @@
-
 import {
   Carousel,
   CarouselContent,
@@ -18,7 +17,9 @@ type CarouselWithPaginationProps = {
   games: Game[];
 };
 
-export const ListCarousel = async({ games }: CarouselWithPaginationProps) => {
+export default async function ListCarousel({
+  games,
+}: CarouselWithPaginationProps) {
   return (
     <>
       <Carousel
@@ -61,4 +62,4 @@ export const ListCarousel = async({ games }: CarouselWithPaginationProps) => {
       </Carousel>
     </>
   );
-};
+}
