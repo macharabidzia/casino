@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google"; // Import Poppins
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "../components/layout/app-sidebar";
@@ -27,7 +27,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        // Use the Poppins font variable here
         className={`${poppins.variable} antialiased`}
       >
         <SidebarProvider>

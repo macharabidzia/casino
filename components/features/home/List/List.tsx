@@ -18,7 +18,7 @@ const List = async ({
   provider,
   page,
 }: ListProps) => {
-  const { data: games, pagination } = await fetchGames({
+  const { data: games } = await fetchGames({
     category,
     provider,
     search,

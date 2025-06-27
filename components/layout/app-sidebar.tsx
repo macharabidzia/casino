@@ -1,27 +1,14 @@
 import {
-  Calendar,
-  Hamburger,
-  HamburgerIcon,
-  HammerIcon,
-  Home,
-  Inbox,
-  MenuIcon,
-  Search,
-  Settings,
-} from "lucide-react";
-
-import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { items, MenuItem } from "@/lib/menu-data";
+import { items } from "@/lib/menu-data";
 export function AppSidebar() {
   return (
     <Sidebar collapsible="icon" className="group">

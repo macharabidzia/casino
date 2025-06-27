@@ -31,7 +31,6 @@ type PageProps = {
 };
 
 export default async function HomePage({ searchParams }: PageProps) {
-  // Await searchParams before destructuring
   const {
     search,
     category,
@@ -40,7 +39,6 @@ export default async function HomePage({ searchParams }: PageProps) {
     limit = DEFAULT_PAGE_LIMIT,
   } = await searchParams;
 
-  // Now, category and provider will be resolved correctly
   const activeCategories: string[] = parseSearchParamToArray(category);
   const activeProviders: string[] = parseSearchParamToArray(provider);
   const categoriesToDisplay =

@@ -11,19 +11,19 @@ export function CollapsibleSection() {
       <p>
         CASINO is your premier online casino platform, offering a world-class
         gaming experience with hundreds of top-tier casino games, exclusive
-        bonuses, and lightning-fast payouts. Whether you're a fan of classic
+        bonuses, and lightning-fast payouts. Whether you&apos;re a fan of classic
         slots, live dealer games, table games, or jackpot progressives, CASINO
         delivers everything you need for high-stakes excitement and non-stop fun
         — all from the comfort of your home or mobile device. CASINO is your
         premier online casino platform, offering a world-class gaming experience
         with hundreds of top-tier casino games, exclusive bonuses, and
-        lightning-fast payouts. Whether you're a fan of classic slots, live
+        lightning-fast payouts. Whether you&apos;re a fan of classic slots, live
         dealer games, table games, or jackpot progressives, CASINO delivers
         everything you need for high-stakes excitement and non-stop fun — all
         from the comfort of your home or mobile device. CASINO is your premier
         online casino platform, offering a world-class gaming experience with
         hundreds of top-tier casino games, exclusive bonuses, and lightning-fast
-        payouts. Whether you're a fan of classic slots, live dealer games, table
+        payouts. Whether you&apos;re a fan of classic slots, live dealer games, table
         games, or jackpot progressives, CASINO delivers everything you need for
         high-stakes excitement and non-stop fun — all from the comfort of your
         home or mobile device.
@@ -32,7 +32,7 @@ export function CollapsibleSection() {
         <CollapsibleContent className="text-sm">
           <p className="mb-4">
             Join thousands of players worldwide who trust CASINO for its secure,
-            fair, and licensed gameplay. We partner with the industry's most
+            fair, and licensed gameplay. We partner with the industry&apos;s most
             reputable software providers to bring you an unbeatable selection of
             games with stunning graphics, realistic sound effects, and smooth
             play. From roulette and blackjack to immersive live casino tables
