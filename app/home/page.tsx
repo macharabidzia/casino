@@ -25,8 +25,8 @@ type PageProps = {
     search?: string;
     category?: string | string[];
     provider?: string | string[];
-    page: any;
-    limit: any;
+    page: number;
+    limit: number;
   };
 };
 

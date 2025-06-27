@@ -2,7 +2,7 @@
 "use client";
 
 import * as React from "react";
-import { Check, X } from "lucide-react";
+import { Check } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
